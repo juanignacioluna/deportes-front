@@ -7,7 +7,7 @@ constructor(private _http: HttpClient) { }
 
 
 getNotis() {
- return this._http.get("http://localhost:3000/home");
+ return this._http.get("https://deportes-back.herokuapp.com/home");
 }
 
 

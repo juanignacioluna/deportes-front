@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
-import { FileSelectDirective } from 'ng2-file-upload';
+import { FileSelectDirective, FileUploadModule } from 'ng2-file-upload';
 import { FormsModule } from '@angular/forms';
 
 //Rutas
@@ -40,14 +40,15 @@ import { BorrarComponent } from './components/borrar/borrar.component';
     RegistroComponent,
     CerrarComponent,
     NuevoComponent,
-    FileSelectDirective,
+    // FileSelectDirective,
     BorrarComponent
   ],
   imports: [
     BrowserModule,
     APP_ROUTING,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    FileUploadModule
   ],
   providers: [
     HomeService,

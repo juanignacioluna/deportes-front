@@ -7,7 +7,7 @@ constructor(private _http: HttpClient) { }
 
 getNoticias() {
 
-        return this._http.get("http://localhost:3000/noticia");
+        return this._http.get("https://deportes-back.herokuapp.com/noticia");
 
 
  }

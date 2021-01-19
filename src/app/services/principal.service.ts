@@ -7,7 +7,7 @@ constructor(private _http: HttpClient) { }
 
 getPrincipal() {
 
-    return this._http.get("http://localhost:3000/principal");
+    return this._http.get("https://deportes-back.herokuapp.com/principal");
     
 }
 
